@@ -2,6 +2,7 @@ locals {
   subscription_name = "poc100"
   backend_storage_account_name ="samatactlapimtfstate"
   backend_resource_group_name = "rg-matactl-apim-tfstate" 
+  subscription_id = read_terragrunt_config(find_in_parent_folders("subscription.hcl")).locals.subscription_id 
 }
 
 inputs = {
