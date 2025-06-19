@@ -19,6 +19,6 @@ resource "azurerm_api_management" "apim" {
   resource_group_name = azurerm_resource_group.apim[0].name
   publisher_name      = "Kaopanwa Co., Ltd."
   publisher_email     = "morakot.i@kaopanwa.co.th"
-  sku_name            = "Consumption_0"
+  sku_name            = "Basic_1"
   tags                = merge( local.common_tags,{})
 }
